@@ -17,19 +17,34 @@
 
 .card {
   border: 2px solid red;
+  border-radius: 15px;
+  margin: 1px;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 255, 0.3);
   width: 200px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(0, 0, 255, 0.4);
 }
 
 input {
+  margin-bottom: 1rem;
+  padding: 1rem;
   height: 2rem;
   width: 30rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .header {
   text-align: center;
   font-size: 3rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }

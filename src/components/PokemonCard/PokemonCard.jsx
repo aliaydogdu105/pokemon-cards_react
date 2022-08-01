@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PokemonList from "../pokemonList/PokemonList";
+import PokemonList from "../PokemonList/PokemonList";
 import axios from "axios";
 
 const PokemonCard = () => {
@@ -29,7 +29,6 @@ const PokemonCard = () => {
     <div className="page">
       <div>
         <div className="header">
-          {" "}
           <label htmlFor="header">PoKéMoN</label>
         </div>
         <input type="text" id="header" onChange={handleChange} />

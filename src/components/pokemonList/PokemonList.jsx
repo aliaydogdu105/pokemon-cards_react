@@ -1,13 +1,13 @@
 import "./PokemonList.css";
 
-const PokemonList = ({ name, url, index }) => {
+const PokemonList = ({ name, url }) => {
   const imgIndex = url.split("/")[url.split("/").length - 2];
   const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${imgIndex}.png`;
-  console.log(index);
+
   return (
-    <div className="card">
+    <div className="card" key={name}>
       <h3>{name}</h3>
-      <img src={imgUrl} alt="" />
+      <img src={imgUrl} alt="img" />
     </div>
   );
 };
