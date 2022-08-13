@@ -31,7 +31,8 @@
 .card:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
-  background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 4px dotted red;
 }
 
 input {
